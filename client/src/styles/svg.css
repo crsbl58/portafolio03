@@ -1,0 +1,356 @@
+.baseAnimation {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.codeVisual0 {
+  fill: #7c7b7b;
+}
+.codeVisual1 {
+  fill: #6e6d6d;
+}
+.codeVisual2 {
+  fill: #61605f;
+}
+.codeVisual3 {
+  fill: #575656;
+}
+.codeVisual4 {
+  fill: #717070;
+}
+.codeVisual5 {
+  fill: #4f4e4e;
+}
+.codeVisual6 {
+  fill: #886089;
+}
+.codeVisual7 {
+  fill: #bb6172;
+}
+.codeVisual8 {
+  fill: #6b85bf;
+}
+.codeVisual9 {
+  fill: #637ead;
+}
+.codeVisual10 {
+  fill: #efefef;
+}
+.codeVisual11 {
+  fill: #777777;
+}
+
+.footerHeader0 {
+
+  fill: black;
+}
+.footerHeader1 {
+  fill: rgb(5, 15, 41);
+  animation-name: movementFooterHeader01;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.footerHeader2 {
+  fill: black;
+  animation-name: movementFooterHeader02;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes movementFooterHeader02 {
+  50% {
+    d: path(
+      "M100,20H0c0-2.6,0-5.2,0-7.8c6.4,1.6,16.3,3.6,28.4,3.4c14.7-0.2,21.8-3.3,38.7-5c7.7-0.8,19-1.5,32.9-0.5C100,13.4,100,16.7,100,20z"
+    );
+  }
+} 
+@keyframes movementFooterHeader01 {
+  50% {
+    d: path(
+      "M100,20H0c0-3.1,0-6.1,0-9.2c6.3,1.7,16.1,3.8,28,3.4c14.4-0.4,21.5-4,37.7-6.3c8-1.2,19.7-2.3,34.3-1.4C100,11,100,15.5,100,20z"
+    );
+  }
+} 
+
+/* model*/
+.modelFormalPc0 {
+  fill: #cedadd;
+  animation-name: movementMausePar0;
+  animation-duration: 7s;
+}
+@keyframes movementMausePar0 {
+  50% {
+    d: path(
+      "M30.74,132.71c-1.26,1.5-5.7,6.38-12.24,5.5c-1.88-0.25-3.52-0.92-4.83-1.64c-1.35-5.59,2.03-10.99,6.89-11.75 C25.03,124.12,29.67,127.53,30.74,132.71z"
+    );
+  }
+}
+.modelFormalPc1 {
+  fill: #c5d1d3;
+  animation-name: movementMausePar1;
+  animation-duration: 7s;
+}
+@keyframes movementMausePar1 {
+  50% {
+    d: path(
+      "M29.44,131.75c-1.17,1.29-5.28,5.48-11.22,4.84c-1.7-0.18-3.19-0.72-4.37-1.32c-1.14-4.71,2.02-9.34,6.45-10.05 C24.37,124.57,28.54,127.39,29.44,131.75z"
+    );
+  }
+}
+.modelFormalPc2 {
+  fill: #e2e0d7;
+  animation-duration: 7s;
+  animation-name: movementHandMause;
+}
+
+@keyframes movementHandMause {
+  50% {
+    d: path(
+      "M33.3,126.29l-9.65,9.73c-0.25,0.05-4.41,0.73-7.17-2.35c-2.06-2.3-1.91-5.1-1.87-5.64 c2.99-3.8,5.97-7.6,8.96-11.4L33.3,126.29z"
+    );
+  }
+}
+
+.modelFormalPc3 {
+  fill: #bfd5d8;
+}
+.modelFormalPc4 {
+  fill: #505e5e;
+}
+.modelFormalPc5 {
+  fill: #d9d7d1;
+}
+.modelFormalPc6 {
+  fill: #474437;
+}
+.modelFormalPc7 {
+  fill: #4f4c3f;
+}
+.modelFormalPc8 {
+  animation-duration: 0.2s;
+  animation-name: blinkScreen0;
+  opacity: 0.1;
+  fill: #ffffff8a;
+}
+
+@keyframes blinkScreen0 {
+  50% {
+    opacity: 0.01;
+  }
+}
+
+.modelFormalPc9 {
+  animation-duration: 0.2s;
+  animation-name: blinkScreen0;
+  opacity: 0.09;
+  fill: #ffffff4d;
+}
+@keyframes blinkScreen0 {
+  50% {
+    opacity: 0.01;
+  }
+}
+.modelFormalPc10 {
+  fill: #c7dbde;
+}
+.modelFormalPc11 {
+  fill: #587073;
+}
+.modelFormalPc12 {
+  fill: #5e6868;
+}
+.modelFormalPc13 {
+  fill: #c8d4d6;
+}
+
+/* icono mundo */
+.icoWorld0 {
+  fill: #add3ec;
+}
+.icoWorld1 {
+  fill: #cce0b7;
+}
+
+/* icono casa */
+.icoHome0 {
+  fill: #e4daa8;
+}
+.icoHome1 {
+  fill: #c1ad97;
+}
+.icoHome2 {
+  fill: #bfaf9f;
+}
+.icoHome3 {
+  fill: #c6b19e;
+}
+.icoHome4 {
+  fill: #c4b8ad;
+}
+.icoHome5 {
+  fill: #9dbfb3;
+}
+.icoHome6 {
+  fill: #b7b2ae;
+}
+.icoHome7 {
+  fill: #e7e2df;
+}
+.icoHome8 {
+  fill: #bcbaa2;
+}
+.icoHome9 {
+  fill: #bcb9ad;
+}
+.icoHome10 {
+  fill: #aa9f96;
+}
+
+/* icono formacion */
+.icoTraining0 {
+  fill: #909091;
+  stroke: #878787;
+  stroke-width: 0.15;
+  stroke-miterlimit: 10;
+}
+.icoTraining1 {
+  fill: #e0e4c6;
+}
+.icoTraining2 {
+  fill: #9c9b9b;
+}
+
+.wallpaper00_0 {
+  fill: #c6cbdd;
+}
+
+.html5Background0 {
+  opacity: 0.46;
+  fill: #e29352;
+  enable-background: new;
+  animation-name: html5BackgroundMovi;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes html5BackgroundMovi {
+  50% {
+    d: path(
+      "M24,17.6c-0.4,1.5-1.2,4.9-4.3,6.5c-3.2,1.7-6.5,0.4-8-0.1c-3.8-1.4-5.8-4.4-6.6-5.6c-0.7-1-4.1-6.3-2.1-11.7C3.5,5.4,4.5,2.8,6.8,2c1.9-0.7,3,0.5,10.8,4.4c4,2.1,5,2.4,5.9,3.8C25.1,13,24.3,16.3,24,17.6z"
+    );
+  }
+}
+
+.css3Background0 {
+  opacity: 0.46;
+  fill: #2c97c6;
+  enable-background: new;
+  animation-name: css3BackgroundMovi;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes css3BackgroundMovi {
+  50% {
+    d: path(
+      "M23.1,21.6c-1.4,2.7-2.1,4-3.4,4.9c-3.8,2.6-9.1,0.7-10.3,0.3c-1.1-0.4-3.8-1.4-5.9-3.9C-1.1,17.4-0.6,7.2,4.5,3.2c2-1.5,4.2-1.7,8.7-2c4.7-0.3,8.8-0.6,11.2,1.9c2,2.1,2,5,2.1,7.5C26.6,15,24.9,18.2,23.1,21.6z"
+    );
+  }
+}
+
+.jsBackground0 {
+  opacity: 0.46;
+  fill: #e2dd74;
+  enable-background: new;
+  animation-name: jsBackgroundMovi;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jsBackgroundMovi {
+  50% {
+    d: path(
+      "M22.4,23.1c-5.7,6.1-18.1,4.2-19.8,0c-0.9-2.1,1.7-3.3,2.3-8.4C5.5,8.8,2.6,6.6,4.3,4C6.7,0.3,14.5,1.8,15,1.9c1.6,0.3,4.9,1,7.5,4c3.2,3.6,3.1,8,3,9.2C25.5,16,25.2,20.1,22.4,23.1z"
+    );
+  }
+}
+
+.reactBackground0 {
+  opacity: 0.46;
+  fill: #88bcdf;
+  enable-background: new;
+  animation-name: reactBackgroundMovi;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes reactBackgroundMovi {
+  50% {
+    d: path(
+      "M21.4,21.9c-4.8,4.7-4.7,5.4-6.1,5.7c-4.6,1-11.9-5.3-11.9-12.1c0-3.8,2.4-6.7,3.9-8.6c1.6-2,4.4-5.3,7.8-5c0.7,0.1,1.8,0.3,6.4,5.4c3.9,4.3,5.8,6.4,5.6,8.1C26.9,17.1,25.9,17.4,21.4,21.9z"
+    );
+  }
+}
+
+.nodeBackground0 {
+  opacity: 0.46;
+  fill: #8dc487;
+  enable-background: new;
+  animation-name: nodeBackgroundMovi;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes nodeBackgroundMovi {
+  50% {
+    d: path(
+      "M20.1,25.2c-5.8,2.3-12-3.9-12.3-4.3C4,16.9,1.8,10,4.3,7.2C5.5,5.9,8.2,6,13.5,6.1c6,0.2,8.9,0.3,10.4,1.7C27.7,11.6,26.5,22.6,20.1,25.2z"
+    );
+  }
+}
+
+.expressBackground0 {
+  opacity: 0.46;
+  fill: #cccccc;
+  enable-background: new;
+  animation-name: expressBackgroundMovi;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes expressBackgroundMovi {
+  50% {
+    d: path(
+      "M14.8,22.6c-6.3-1.1-9.6,3.5-11.8,2c-3.7-2.6-0.3-21.2,9-22.9c4.2-0.8,7.8,2.2,8.5,2.8c7.6,6.3,6.1,20.2,2.5,21.6C21,26.9,19.7,23.5,14.8,22.6z"
+    );
+  }
+}
+.profile00Background0 {
+  opacity: 0.46;
+  fill: #6f7b93;
+  enable-background: new;
+  animation-name: profile00BackgroundMovi;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes profile00BackgroundMovi {
+  50% {
+    d: path(
+      "M11.3,23.9c-3.4-1.1-7.9-2.6-9-6C0.5,12.2,8.5,1.7,16.8,3c4.6,0.8,8.2,5,9.2,9.5c0.9,3.9,0.1,9.5-3.8,11.9C18.9,26.5,15.1,25.2,11.3,23.9z"
+    );
+  }
+}
+
+
+
+
+

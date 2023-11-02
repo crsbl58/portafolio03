@@ -1,0 +1,20 @@
+::view-transition-new(aboutChild1) {
+  animation-name: aboutChild1;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+::view-transition-new(aboutChild2) {
+  animation-name: aboutChild1;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes aboutChild1 {
+  0% {
+    filter: blur(0.1rem) grayscale(100%);
+    opacity: 0;
+    transform: scale(0);
+  }
+}

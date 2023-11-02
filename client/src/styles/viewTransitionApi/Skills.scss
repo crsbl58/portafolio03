@@ -1,0 +1,38 @@
+::view-transition-new(skillChild1) {
+  animation-name: skillAnimation00;
+ 
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+::view-transition-new(skillChild2) {
+  animation-name: skillAnimation01;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes skillAnimation03 {
+  0% {
+    filter: blur(0.1rem) grayscale(100%);
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+}
+
+@keyframes skillAnimation00 {
+  0% {
+    filter: blur(0.1rem) grayscale(100%);
+    opacity: 0;
+    transform: translate(50%, 0);
+  }
+}
+
+@keyframes skillAnimation01 {
+  0% {
+    filter: blur(0.1rem) grayscale(100%);
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+}

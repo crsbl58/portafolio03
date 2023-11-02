@@ -1,0 +1,79 @@
+::view-transition-new(projectsCardProjectImgNext) {
+  animation-name: cardProjectNext;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+/* ::view-transition-old(projectsCardProjectImgNext) {
+  animation-name: cardProjectPrevOld;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+} */
+
+/* @keyframes cardProjectPrevOld {
+  100% {
+    filter: blur(0.1rem) grayscale(100%);
+    opacity: 0;
+    transform: translate(-160%, 0);
+  }
+}  */
+
+
+
+
+::view-transition-new(projectsCardProjectImgPrev) {
+  animation-name: cardProjectPrev;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+/* ::view-transition-old(projectsCardProjectImgPrev) {
+  animation-name: cardProjectPrev;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+} */
+
+::view-transition-new(projectsCardProjectTitleNext) {
+  animation-name: cardProjectNext;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+/* ::view-transition-old(projectsCardProjectTitlePrev) {
+  animation-name: cardProjectPrevOld;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+} */
+
+@keyframes cardProjectNext {
+  0% {
+    filter: blur(0.1rem) grayscale(100%);
+    opacity: 0;
+    transform: translate(80%, 0);
+  }
+}
+
+@keyframes cardProjectPrev {
+  0% {
+    filter: blur(0.1rem) grayscale(100%);
+    opacity: 0;
+    transform: translate(-80%, 0);
+  }
+}
+
+/* @keyframes cardProjectNextOld {
+  100% {
+    filter: blur(0.1rem) grayscale(100%);
+    opacity: 0;
+    transform: translate(-160%, 0);
+  }
+}
+*/
+
+

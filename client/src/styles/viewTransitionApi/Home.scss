@@ -1,0 +1,14 @@
+::view-transition-new(homeChild1) {
+  animation-name: homeChild1;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes homeChild1 {
+  0% {
+    filter: blur(0.1rem) grayscale(100%);
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+}
