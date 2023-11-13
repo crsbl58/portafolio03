@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Nav.module.scss";
 import { useRouter } from "next/router";
-import viewTransition from "@/utils/viewTransition";
 
 import homeIcon from "@/svg/homeIcon.svg";
 import aboutIcon from "@/svg/person.svg";
@@ -10,9 +9,12 @@ import projectsIcon from "@/svg/description.svg";
 import contactIcon from "@/svg/contacts.svg";
 
 import Image from "next/image";
+import { useNav } from "@/store/hooks";
 
 const Nav = () => {
   const router = useRouter();
+  const { changeState, stateSyle } = useNav();
+
   const [stateMenu, setStateMenu] = useState<any>(null);
   const [stateListNav, setStateListNav] = useState({
     CurrentNav: 0,
@@ -24,12 +26,28 @@ const Nav = () => {
       { name: "Contacto", route: "/contact", icon: contactIcon },
     ],
   });
-
   const [windowWidth, setWindowWidth] = useState<any>(null);
+
+  const onClickNav = (list: any, index: number) => {
+    if(stateListNav.CurrentNav !== index){
+      changeState(true);
+      console.log(stateSyle)
+      setTimeout(() => {
+        console.log(stateSyle)
+        changeState(false);
+        router.push(list.route);
+        setStateListNav({ ...stateListNav, CurrentNav: index });
+      }, 600);
+     
+      if (windowWidth < 750) {
+        setStateMenu(false);
+      }
+    }
+  };
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
-    if (window.innerWidth < 700) {
+    if (window.innerWidth < 750) {
       setStateMenu(false);
     } else {
       setStateMenu(true);
@@ -71,13 +89,7 @@ const Nav = () => {
 
                   <a
                     onClick={() => {
-                      viewTransition(() => {
-                        router.push(list.route);
-                      });
-                      setStateListNav({ ...stateListNav, CurrentNav: index });
-                      if (windowWidth < 700) {
-                        setStateMenu(false);
-                      }
+                      onClickNav(list, index);
                     }}
                   >
                     <Image src={list.icon} alt={list.name} />

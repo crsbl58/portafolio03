@@ -6,6 +6,7 @@
   align-items: center;
   overflow: scroll;
   padding: 0 0 2rem 0;
+  
   > h1 {
     margin-bottom: 3rem;
     margin-top: 6rem;
@@ -72,7 +73,7 @@
     }
     > div:nth-child(2) {
       backdrop-filter: blur(0.3rem);
-      background-color: #11111b4f;
+      /*    background-color: #11111b4f; */
       padding: 1rem 0 0.5rem 0;
       position: relative;
       width: 100%;
@@ -120,7 +121,7 @@
         align-items: center;
         /*      border-left: solid 0.05rem rgb(83, 86, 92); */
         /*    border: solid 0.05rem rgb(36, 37, 39); */
-        padding: 0.5rem 5rem 0.5rem 5rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
         background-color: #1921474b;
         backdrop-filter: blur(0.3rem);
 
@@ -229,7 +230,7 @@
         width: 100vw;
         > button {
           height: 20vw;
-
+          background-color: #5c5c64;
           > img {
             width: 14vw;
             height: 14vw;
@@ -237,10 +238,10 @@
           }
         }
         > button:nth-child(2) {
-          border-radius: 0 0 1rem 0;
+          border-radius: 0 0.3rem 1rem 0;
         }
         > button:nth-child(3) {
-          border-radius: 0 0 0 1rem;
+          border-radius: 0.3rem 0 0 1rem;
         }
         > div {
           padding: 0.5rem 0 0.5rem 0;

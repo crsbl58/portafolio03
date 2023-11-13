@@ -1,14 +1,22 @@
-::view-transition-new(homeChild1) {
-  animation-name: homeChild1;
-  animation-duration: 0.8s;
+::view-transition-new(homeContainer) {
+  animation-name: homeContainerNew;
+  animation-duration: 1s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
 
-@keyframes homeChild1 {
+@keyframes homeContainerNew {
   0% {
-    filter: blur(0.1rem) grayscale(100%);
+    overflow: hidden;
+    background-color: rgb(33, 54, 83);
     opacity: 0;
-    transform: translate(0, 50%);
+    transform: translate(0, 80%) scale(0.5);
+  }
+  60% {
+    transform: translate(0, 30%) scale(0.5);
+  }
+  100% {
+    overflow: hidden;
+    border: solid 0.1rem white;
   }
 }

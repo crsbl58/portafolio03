@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  > h2 {
+    position: relative;
+    width: 9rem;
+    height: 3.1rem;
+
+    > span {
+      font-size: 2rem;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      position: absolute;
+      opacity: 0;
+      overflow: hidden;
+   
+    }
+  }
+}

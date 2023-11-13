@@ -186,10 +186,6 @@ const Projects = () => {
   const CardProject = ({ title = "", img = "", info = "", link = [] }: any) => {
     const [stateMenu, setStateMenu] = useState(false);
 
-    useEffect(() => {
-      viewTransition();
-    }, []);
-
     return (
       <div style={{ viewTransitionName: stateViewTransition.cardProject.img }}>
         <Image src={img} alt={title} />
@@ -291,6 +287,10 @@ const Projects = () => {
     }
   };
 
+  useEffect(() => {
+    viewTransition();
+  }, []);
+  
   return (
     <div className={styles.container}>
       <h1>Ejercicios</h1>

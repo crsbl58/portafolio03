@@ -7,11 +7,29 @@ import viewTransition from "@/utils/viewTransition";
 
 import linkedinIcon from "@/svg/linkedinIcon.svg";
 import gitHub from "@/svg/github.svg";
+import TextAnimation from "@/components/ui/TextAnimation/TextAnimation";
 
 const Home = () => {
-  useEffect(() => {
-    viewTransition();
-  }, []);
+  const [stateListSkill] = useState({
+    skills: [
+      {
+        title: "React.js",
+        backgroundColor: "aquamarine",
+      },
+      {
+        title: "Sass",
+        backgroundColor: "violet",
+      },
+      {
+        title: "Express",
+        backgroundColor: "rgb(155, 163, 163)",
+      },
+      {
+        title: "Mysql",
+        backgroundColor: "goldenrod",
+      },
+    ],
+  });
 
   return (
     <div className={styles.container}>
@@ -25,6 +43,7 @@ const Home = () => {
         </div>
 
         <div>
+          <TextAnimation array={stateListSkill.skills} />
           <Image
             onClick={() => {
               window.open(
@@ -43,6 +62,13 @@ const Home = () => {
             alt="linkedin"
           />
         </div>
+        <h2>
+          En constante aprendizaje, al igual en busca de dar mi mejor trabajo.
+        </h2>
+      </div>
+      <div>
+        <h3>Símbolo del sistema</h3>
+        <p>asdas dasdasd jasjdjasdjasj jsadjasjdsadu usaudusaudu ausduasud</p>
       </div>
     </div>
   );

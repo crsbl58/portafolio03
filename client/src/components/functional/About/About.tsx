@@ -4,8 +4,11 @@ import starIcon from "@/svg/starIcon.svg";
 import educationLearning from "@/svg/educationLearning.svg";
 import Image from "next/image";
 import viewTransition from "@/utils/viewTransition";
+import { useNav } from "@/store/hooks";
 
 const About = () => {
+  const { stateSyle }: any = useNav();
+
   const [stateProfile02] = useState([
     {
       title: "Actitud positiva",
@@ -41,12 +44,14 @@ const About = () => {
     },
   ]);
 
-  useEffect(() => {
-    viewTransition();
-  }, []);
+  useEffect(() => {}, []);
 
+/*   useEffect(() => {
+    viewTransition();
+  }, []); */
   return (
-    <div className={styles.container}>
+    <div
+    className={styles.container}>
       <div>
         <h1>Aspiraciones</h1>
         <h3>

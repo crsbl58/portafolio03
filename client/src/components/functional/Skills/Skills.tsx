@@ -73,11 +73,9 @@ const Skills = () => {
       "ts-node",
     ],
   });
-
   useEffect(() => {
     viewTransition();
   }, []);
-
   return (
     <div className={styles.container}>
       <div>

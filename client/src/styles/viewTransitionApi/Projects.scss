@@ -1,41 +1,54 @@
-::view-transition-new(projectsCardProjectImgNext) {
+::view-transition-new(projectsContainer) {
+  animation-name: projectsContainer;
+
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes projectsContainer {
+  0% {
+    border:solid .1rem white;
+    background-color: rgb(33, 54, 83);
+    opacity: 0;
+    transform: translate(0, 80%) scale(0.5);
+  }
+  60% {
+    transform: translate(0, 30%) scale(0.5);
+  }
+}
+
+
+
+
+
+/* ::view-transition-new(projectsCardProjectImgNext) {
   animation-name: cardProjectNext;
   animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
 
-/* ::view-transition-old(projectsCardProjectImgNext) {
-  animation-name: cardProjectPrevOld;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-} */
-
-/* @keyframes cardProjectPrevOld {
-  100% {
-    filter: blur(0.1rem) grayscale(100%);
-    opacity: 0;
-    transform: translate(-160%, 0);
-  }
-}  */
-
-
-
-
-::view-transition-new(projectsCardProjectImgPrev) {
-  animation-name: cardProjectPrev;
-  animation-duration: 0.8s;
+::view-transition-old(projectsCardProjectImgNext) {
+  animation-name: cardProjectNextOld;
+  animation-duration: 1s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
 
-/* ::view-transition-old(projectsCardProjectImgPrev) {
+::view-transition-new(projectsCardProjectImgPrev) {
   animation-name: cardProjectPrev;
-  animation-duration: 0.8s;
+  animation-duration: 1s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-} */
+}
+
+::view-transition-old(projectsCardProjectImgPrev) {
+  animation-name: cardProjectPrevOld;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
 
 ::view-transition-new(projectsCardProjectTitleNext) {
   animation-name: cardProjectNext;
@@ -44,18 +57,11 @@
   animation-timing-function: linear;
 }
 
-/* ::view-transition-old(projectsCardProjectTitlePrev) {
-  animation-name: cardProjectPrevOld;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-} */
-
 @keyframes cardProjectNext {
   0% {
     filter: blur(0.1rem) grayscale(100%);
     opacity: 0;
-    transform: translate(80%, 0);
+    transform: translate(260%, 0);
   }
 }
 
@@ -63,17 +69,29 @@
   0% {
     filter: blur(0.1rem) grayscale(100%);
     opacity: 0;
-    transform: translate(-80%, 0);
+    transform: translate(-260%, 0);
   }
 }
 
-/* @keyframes cardProjectNextOld {
+@keyframes cardProjectPrevOld {
+  50% {
+    transform: translate(0, 0);
+  }
   100% {
-    filter: blur(0.1rem) grayscale(100%);
-    opacity: 0;
-    transform: translate(-160%, 0);
+    filter: blur(0.2rem) brightness(10%);
+    opacity: 0.5;
+    transform: translate(220%, 0);
   }
 }
-*/
 
-
+@keyframes cardProjectNextOld {
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    filter: blur(0.2rem) brightness(10%);
+    opacity: 0.5;
+    transform: translate(-220%, 0);
+  }
+}
+ */

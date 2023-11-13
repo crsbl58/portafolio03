@@ -9,7 +9,6 @@ const Contact = () => {
   useEffect(() => {
     viewTransition();
   }, []);
-
   return (
     <div className={styles.container}>
       <h1>Contacto</h1>
