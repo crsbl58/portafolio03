@@ -78,7 +78,6 @@ const Skills = () => {
   }, []);
   return (
     <div className={styles.container}>
-      <div>
         <h1>Skills</h1>
         <div>
           {stateListSkill.skills.map((list: any, index: number) => (
@@ -94,7 +93,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-    </div>
+
   );
 };
 

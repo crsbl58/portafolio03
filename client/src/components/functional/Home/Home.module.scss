@@ -8,7 +8,6 @@
   align-items: center;
   padding: 0 2rem 0 5rem;
   gap: 5rem;
- 
 
   > div:nth-child(1) {
     display: flex;
@@ -115,7 +114,22 @@
       font-family: monospace;
       font-size: 1rem;
       font-weight: 700;
+
+      &::after {
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-name: skl_00;
+        animation-timing-function: linear;
+        background-color: #008b8b;
+        content: "_";
+      }
     }
+  }
+}
+
+@keyframes skl_00{
+  0%{
+      content: "";
   }
 }
 

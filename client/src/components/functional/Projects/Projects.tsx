@@ -22,6 +22,7 @@ import apiCountries from "../../../../public/img/apiCountries.jpg";
 import advertisingSign from "../../../../public/img/advertisingSign.jpg";
 import apiImg from "../../../../public/img/apiImg.jpg";
 import viewTransition from "@/utils/viewTransition";
+import { url } from "inspector";
 
 const Projects = () => {
   const [stateListProjects, setStateListProjects] = useState({
@@ -288,9 +289,9 @@ const Projects = () => {
   };
 
   useEffect(() => {
-    viewTransition();
+    console.log(Imdb);
   }, []);
-  
+
   return (
     <div className={styles.container}>
       <h1>Ejercicios</h1>
@@ -345,7 +346,15 @@ const Projects = () => {
             </ul>
           </nav>
         </div>
-        <div>
+        <div
+          style={{
+       
+      /*       backdropFilter: 'grayscale(70%)', */
+           /*  backgroundImage: `url(${
+              stateListProjects.listPj[stateListProjects.selectCurrent].img.src
+            })`, */
+          }}
+        >
           <CardProject
             title={
               stateListProjects.listPj[stateListProjects.selectCurrent].title

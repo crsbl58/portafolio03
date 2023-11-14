@@ -39,7 +39,7 @@ const Nav = () => {
         setStateListNav({ ...stateListNav, CurrentNav: index });
       }, 600);
      
-      if (windowWidth < 750) {
+      if (windowWidth < 700) {
         setStateMenu(false);
       }
     }

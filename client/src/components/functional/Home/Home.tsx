@@ -31,6 +31,8 @@ const Home = () => {
     ],
   });
 
+  const cmdP = 'C:\\Cristóbal\\Chile\\Sexta región\\Aiep: tec. Nivel Superior Programación Computacional';
+
   return (
     <div className={styles.container}>
       <div>
@@ -68,7 +70,7 @@ const Home = () => {
       </div>
       <div>
         <h3>Símbolo del sistema</h3>
-        <p>asdas dasdasd jasjdjasdjasj jsadjasjdsadu usaudusaudu ausduasud</p>
+        <p>{cmdP}</p>
       </div>
     </div>
   );
