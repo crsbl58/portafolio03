@@ -25,9 +25,9 @@ import viewTransition from "@/utils/viewTransition";
 import { url } from "inspector";
 
 const Projects = () => {
+  const [stateNav, setStateNav] = useState(false);
   const [stateListProjects, setStateListProjects] = useState({
     selectCurrent: 0,
-    stateNav: false,
     listPj: [
       {
         title: "Portafolio 1",
@@ -43,6 +43,7 @@ const Projects = () => {
           "Node.js",
         ],
         img: portafolio2022,
+        info: "Fue mi primer portafolio donde aprendí a crear imágenes SVG utilizando como herramienta Illustrator y a animarlas con CSS.",
       },
       {
         title: "Portafolio 2",
@@ -52,6 +53,7 @@ const Projects = () => {
         ],
         technologies: ["Css3, ", "Node, ", "Express, ", "React.js"],
         img: portafolio2023,
+        info: "Mi segundo portafolio, donde pulí mis conocimientos con CSS, al igual que creé proyectos con Node.",
       },
       {
         title: "Generador pdfExcel",
@@ -61,6 +63,7 @@ const Projects = () => {
         ],
         technologies: ["Html5, ", "Css3, ", "React.js"],
         img: generatorExcelPdf,
+        info: "Ejercicio donde reforcé el conocimiento aprendido, creando PDF y Excel.",
       },
       {
         title: "Calendario reserva",
@@ -70,6 +73,7 @@ const Projects = () => {
         ],
         technologies: ["Html5, ", "Css3, ", "React.js"],
         img: calendar,
+        info: "Ejercicio donde practiqué con fechas, creando un calendario para realizar reservas.",
       },
       {
         title: "Chat online",
@@ -79,6 +83,7 @@ const Projects = () => {
         ],
         technologies: ["Html5, ", "Css3, ", "React.js, ", "SocketIo"],
         img: chat,
+        info: "Ejercicio donde empecé a practicar con Socket.IO, realizando un chat grupal.",
       },
       {
         title: "Crud",
@@ -88,6 +93,7 @@ const Projects = () => {
         ],
         technologies: ["Html5, ", " Css3, ", " React.js"],
         img: crud,
+        info: "Ejercicio donde creé un CRUD de ejemplo en el lado del frontend, incorporando notificaciones de acciones.",
       },
       {
         title: "E-commerce",
@@ -97,6 +103,7 @@ const Projects = () => {
         ],
         technologies: ["Html5, ", " Css3, ", " React.js"],
         img: eCommerce,
+        info: "Ejercicio donde creé un sitio de comercio únicamente en la parte del frontend, utilizando localStorage y paginación.",
       },
       {
         title: "Analisis de ventas",
@@ -106,6 +113,7 @@ const Projects = () => {
         ],
         technologies: ["Html5, ", " Css3, ", " React.js"],
         img: analysisDdata,
+        info: "Ejercicio de análisis de ventas con distintos filtros aplicables.",
       },
       {
         title: "Formulario",
@@ -115,6 +123,7 @@ const Projects = () => {
         ],
         technologies: ["Html5, ", " Css3, ", " React.js"],
         img: form,
+        info: "Ejercicio de formulario que debe completarse con distintos pasos.",
       },
       {
         title: "Maqueta",
@@ -124,6 +133,7 @@ const Projects = () => {
         ],
         technologies: ["Html5, ", " Css3, ", " React.js"],
         img: design,
+        info: "Ejercicio de maquetación donde se utilizan Flexbox y Grid.",
       },
       {
         title: "Clon IMDb",
@@ -133,6 +143,7 @@ const Projects = () => {
         ],
         technologies: ["Html5, ", " Css3, ", " React.js"],
         img: Imdb,
+        info: "Ejercicio donde se creó un clon de la página de IMDb.",
       },
       {
         title: "Api paises",
@@ -142,6 +153,7 @@ const Projects = () => {
         ],
         technologies: ["Html5, ", " Css3, ", " React.js"],
         img: apiCountries,
+        info: "Ejercicio donde se estableció una conexión a una API que proporciona la lista de países.",
       },
       {
         title: "Letrero publicidad",
@@ -151,6 +163,7 @@ const Projects = () => {
         ],
         technologies: ["Html5, ", " Css3, ", " React.js"],
         img: advertisingSign,
+        info: "Ejercicio para una pantalla publicitaria con ofertas modificables.",
       },
       {
         title: "Api imagenes",
@@ -160,44 +173,81 @@ const Projects = () => {
         ],
         technologies: ["Html5, ", " Css3, ", " React.js"],
         img: apiImg,
+        info: "Ejercicio donde se estableció una conexión a una API que proporciona imágenes según la búsqueda.",
       },
     ],
   });
-
-  const stateViewTransitionName = {
-    cardProject: {
-      img: {
-        next: "projectsCardProjectImgNext",
-        prev: "projectsCardProjectImgPrev",
-      },
-      title: {
-        next: "projectsCardProjectTitleNext",
-        prev: "projectsCardProjectTitlePrev",
-      },
-    },
-  };
-
-  const [stateViewTransition, setStateViewTransition] = useState({
-    cardProject: {
-      img: stateViewTransitionName.cardProject.img.next,
-      title: stateViewTransitionName.cardProject.title.next,
-    },
+  const [stateAnimation, setStateAnimation] = useState({
+    name: "",
   });
 
   const CardProject = ({ title = "", img = "", info = "", link = [] }: any) => {
     const [stateMenu, setStateMenu] = useState(false);
 
     return (
-      <div style={{ viewTransitionName: stateViewTransition.cardProject.img }}>
+      <div
+        style={{
+          /*  viewTransitionName: stateViewTransition.cardProject.img, */
+          animationName: stateAnimation.name,
+          animationDuration: "1.5s",
+          animationIterationCount: 1,
+          animationTimingFunction: "liniar",
+        }}
+      >
+        <style jsx>{`
+          @keyframes prevSlider {
+            0% {
+              opacity: 0;
+              transform: translate(-200%, 0);
+            }
+
+            100% {
+              transform: translate(0, 0);
+            }
+          }
+
+          @keyframes prevExitSlider {
+            0% {
+              transform: translate(0, 0);
+            }
+
+            100% {
+              opacity: 0;
+              transform: translate(200%, 0);
+            }
+          }
+
+          @keyframes nextSlider {
+            0% {
+              opacity: 0;
+              transform: translate(200%, 0);
+            }
+
+            100% {
+              transform: translate(0, 0);
+            }
+          }
+
+          @keyframes nextExitSlider {
+            0% {
+              transform: translate(0, 0);
+            }
+
+            100% {
+              opacity: 0;
+              transform: translate(-200%, 0);
+            }
+          }
+          @keyframes navSlider {
+            0% {
+              opacity: 0;
+            }
+          }
+        `}</style>
+
         <Image src={img} alt={title} />
         <div>
-          <h2
-            style={{
-              viewTransitionName: stateViewTransition.cardProject.title,
-            }}
-          >
-            {title}
-          </h2>
+          <h2>{title}</h2>
           <Image
             style={
               stateMenu
@@ -241,56 +291,58 @@ const Projects = () => {
   };
 
   const directionArrow = (type: string) => {
-    setStateListProjects({
-      ...stateListProjects,
-      selectCurrent: stateListProjects.selectCurrent + 1,
-    });
-
     switch (type) {
       case "prev":
-        setStateViewTransition({
-          ...stateViewTransition,
-          cardProject: {
-            img: stateViewTransitionName.cardProject.img.prev,
-            title: stateViewTransitionName.cardProject.title.prev,
-          },
+        setStateAnimation({
+          ...stateAnimation,
+          name: "prevExitSlider",
         });
-        stateListProjects.selectCurrent === 0
-          ? setStateListProjects({
-              ...stateListProjects,
-              selectCurrent: stateListProjects.listPj.length - 1,
-            })
-          : setStateListProjects({
-              ...stateListProjects,
-              selectCurrent: stateListProjects.selectCurrent - 1,
-            });
+        setTimeout(() => {
+          console.log("timeout");
+          setStateAnimation({
+            ...stateAnimation,
+            name: "prevSlider",
+          });
+
+          stateListProjects.selectCurrent === 0
+            ? setStateListProjects({
+                ...stateListProjects,
+                selectCurrent: stateListProjects.listPj.length - 1,
+              })
+            : setStateListProjects({
+                ...stateListProjects,
+                selectCurrent: stateListProjects.selectCurrent - 1,
+              });
+        }, 1400);
+
         break;
       case "next":
-        setStateViewTransition({
-          ...stateViewTransition,
-          cardProject: {
-            img: stateViewTransitionName.cardProject.img.next,
-            title: stateViewTransitionName.cardProject.title.next,
-          },
+        setStateAnimation({
+          ...stateAnimation,
+          name: "nextExitSlider",
         });
-        stateListProjects.selectCurrent === stateListProjects.listPj.length - 1
-          ? setStateListProjects({
-              ...stateListProjects,
-              selectCurrent: 0,
-            })
-          : setStateListProjects({
-              ...stateListProjects,
-              selectCurrent: stateListProjects.selectCurrent + 1,
-            });
+        setTimeout(() => {
+          setStateAnimation({
+            ...stateAnimation,
+            name: "nextSlider",
+          });
+
+          stateListProjects.selectCurrent ===
+          stateListProjects.listPj.length - 1
+            ? setStateListProjects({
+                ...stateListProjects,
+                selectCurrent: 0,
+              })
+            : setStateListProjects({
+                ...stateListProjects,
+                selectCurrent: stateListProjects.selectCurrent + 1,
+              });
+        }, 1400);
         break;
       default:
         break;
     }
   };
-
-  useEffect(() => {
-    console.log(Imdb);
-  }, []);
 
   return (
     <div className={styles.container}>
@@ -300,26 +352,17 @@ const Projects = () => {
           <nav>
             <ul
               onClick={() => {
-                setStateViewTransition({
-                  ...stateViewTransition,
-                  cardProject: { img: "", title: "" },
-                });
-                setStateListProjects({
-                  ...stateListProjects,
-                  stateNav: !stateListProjects.stateNav,
+                setStateNav(!stateNav);
+                setStateAnimation({
+                  ...stateAnimation,
+                  name: "",
                 });
               }}
             >
               Lista
-              <Image src={expandMore} alt={"prev"} />
+              <Image src={expandMore} alt={"expandMore"} />
             </ul>
-            <ul
-              style={
-                stateListProjects.stateNav
-                  ? { display: "grid" }
-                  : { display: "none" }
-              }
-            >
+            <ul style={stateNav ? { display: "grid" } : { display: "none" }}>
               {stateListProjects.listPj.map((list: any, index: number) => (
                 <li
                   style={
@@ -328,13 +371,9 @@ const Projects = () => {
                       : { backgroundColor: "" }
                   }
                   onClick={() => {
-                    setStateViewTransition({
-                      ...stateViewTransition,
-                      cardProject: { img: "", title: "" },
-                    });
+                    setStateNav(!stateNav);
                     setStateListProjects({
                       ...stateListProjects,
-                      stateNav: !stateListProjects.stateNav,
                       selectCurrent: index,
                     });
                   }}
@@ -345,16 +384,11 @@ const Projects = () => {
               ))}
             </ul>
           </nav>
+          <p>
+            {stateListProjects.listPj[stateListProjects.selectCurrent].info}
+          </p>
         </div>
-        <div
-          style={{
-       
-      /*       backdropFilter: 'grayscale(70%)', */
-           /*  backgroundImage: `url(${
-              stateListProjects.listPj[stateListProjects.selectCurrent].img.src
-            })`, */
-          }}
-        >
+        <div>
           <CardProject
             title={
               stateListProjects.listPj[stateListProjects.selectCurrent].title
