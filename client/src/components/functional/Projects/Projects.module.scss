@@ -28,15 +28,16 @@
     }
     > div:nth-child(1) {
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       gap: 1rem;
       padding: 1rem 0 1rem 0;
 
       > nav {
-        background-color: rgba(27, 49, 92, 0.589);
+        background-color: rgba(18, 20, 31, 0.253);
         border-radius: 0.3rem 0.3rem 0 0;
         position: relative;
         > ul:nth-child(1) {
+    
           cursor: pointer;
           display: flex;
           flex-flow: row wrap;
@@ -90,6 +91,38 @@
   
         } */
       }
+      > button {
+        color: rgba(255, 255, 255, 0.322);
+        cursor: pointer;
+        background-color: rgba(18, 20, 31, 0.253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        transition: 0.3s;
+        border-radius: 50%;
+        &:hover {
+          background-color: rgba(40, 40, 46, 0.397);
+        }
+        > img {
+          width: 3rem;
+          height: 3rem;
+          opacity: 0.1;
+        }
+      }
+
+      > button:nth-child(1) {
+        left: 0rem;
+>nav{
+
+}
+        > img {
+          transform: scaleX(-1);
+        }
+      }
+      > button:nth-child(3) {
+        right: 0rem;
+      }
     }
     > div:nth-child(2) {
       overflow: hidden;
@@ -103,39 +136,7 @@
       height: 20rem;
       justify-content: center;
 
-      > button {
-        color: rgba(255, 255, 255, 0.322);
-        top: 0;
-        cursor: pointer;
-        position: absolute;
-        background-color: rgba(18, 20, 31, 0.253);
-        height: 100%;
-        width: 20%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        transition: 0.3s;
-        &:hover {
-          background-color: rgba(40, 40, 46, 0.397);
-        }
-        > img {
-          width: 4rem;
-          height: 4rem;
-          opacity: 0.1;
-        }
-      }
-
-      > button:nth-child(2) {
-        left: 0rem;
-
-        > img {
-          transform: scaleX(-1);
-        }
-      }
-      > button:nth-child(3) {
-        right: 0rem;
-      }
+    
       > div {
         display: flex;
         flex-flow: column nowrap;
@@ -247,6 +248,7 @@
     > div {
       > div:nth-child(1) {
         padding: 0.5rem 0 0.5rem 0.5rem;
+        justify-content: flex-start;
         > nav {
           > ul:nth-child(2) {
             width: 95vw;

@@ -181,7 +181,12 @@ const Projects = () => {
     name: "",
   });
 
-  const CardProject = ({ title = "", img = "", technologies = "", link = [] }: any) => {
+  const CardProject = ({
+    title = "",
+    img = "",
+    technologies = "",
+    link = [],
+  }: any) => {
     const [stateMenu, setStateMenu] = useState(false);
 
     return (
@@ -244,7 +249,7 @@ const Projects = () => {
             }
           }
         `}</style>
- <div>
+        <div>
           <h2>{title}</h2>
           <Image
             style={
@@ -284,11 +289,8 @@ const Projects = () => {
             </ul>
           </nav>
         </div>
-        <p>
-            {stateListProjects.listPj[stateListProjects.selectCurrent].info}
-          </p>
+        <p>{stateListProjects.listPj[stateListProjects.selectCurrent].info}</p>
         <Image src={img} alt={title} />
-       
       </div>
     );
   };
@@ -352,6 +354,13 @@ const Projects = () => {
       <h1>Ejercicios</h1>
       <div>
         <div>
+           <button
+            onClick={() => {
+              directionArrow("next");
+            }}
+          >
+            <Image src={next} alt={"next"} />
+          </button>
           <nav>
             <ul
               onClick={() => {
@@ -387,7 +396,13 @@ const Projects = () => {
               ))}
             </ul>
           </nav>
-       
+          <button
+            onClick={() => {
+              directionArrow("prev");
+            }}
+          >
+            <Image src={next} alt={"prev"} />
+          </button>
         </div>
         <div>
           <CardProject
@@ -403,20 +418,8 @@ const Projects = () => {
               stateListProjects.listPj[stateListProjects.selectCurrent].link
             }
           />
-          <button
-            onClick={() => {
-              directionArrow("prev");
-            }}
-          >
-            <Image src={next} alt={"prev"} />
-          </button>
-          <button
-            onClick={() => {
-              directionArrow("next");
-            }}
-          >
-            <Image src={next} alt={"next"} />
-          </button>
+
+         
         </div>
       </div>
     </div>
