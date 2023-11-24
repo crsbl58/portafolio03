@@ -15,6 +15,7 @@ const KeyFramesAnimation = ({ children }: { children: any }) => {
   return (
     <div
       style={{
+        zIndex:2,
         animationName: stateAnimation,
         animationDuration: ".75s",
         animationIterationCount: 1,

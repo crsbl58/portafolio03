@@ -1,0 +1,23 @@
+.container{
+    filter: blur(.06rem);
+   top:0rem;
+    left:-2vw;
+    width:7.5rem;
+    height: 7.5rem;
+    position: absolute;
+    box-shadow: 0 0 4rem 1rem rgba(224, 224, 224, 0.274),  0 0 2rem 0.2rem rgba(243, 241, 241, 0.267),
+    inset 0 0 0.8rem 0.2rem rgba(243, 241, 241, 0.486);
+    border-radius: 50%;
+    animation-name: moonLight;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+  }
+  
+  @keyframes moonLight {
+    50%{
+        box-shadow: 0 0 3.8rem 1rem rgba(224, 224, 224, 0.26),  0 0 2.2rem 0.2rem rgba(243, 241, 241, 0.247),
+        inset 0 0 1rem 0.2rem rgba(243, 241, 241, 0.471);
+    }
+  }

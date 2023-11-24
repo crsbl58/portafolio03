@@ -181,7 +181,7 @@ const Projects = () => {
     name: "",
   });
 
-  const CardProject = ({ title = "", img = "", info = "", link = [] }: any) => {
+  const CardProject = ({ title = "", img = "", technologies = "", link = [] }: any) => {
     const [stateMenu, setStateMenu] = useState(false);
 
     return (
@@ -244,9 +244,7 @@ const Projects = () => {
             }
           }
         `}</style>
-
-        <Image src={img} alt={title} />
-        <div>
+ <div>
           <h2>{title}</h2>
           <Image
             style={
@@ -279,13 +277,18 @@ const Projects = () => {
                 GitHub
               </li>
               <li>
-                {info.map((list: any) => {
+                {technologies.map((list: any) => {
                   return list;
                 })}
               </li>
             </ul>
           </nav>
         </div>
+        <p>
+            {stateListProjects.listPj[stateListProjects.selectCurrent].info}
+          </p>
+        <Image src={img} alt={title} />
+       
       </div>
     );
   };
@@ -384,9 +387,7 @@ const Projects = () => {
               ))}
             </ul>
           </nav>
-          <p>
-            {stateListProjects.listPj[stateListProjects.selectCurrent].info}
-          </p>
+       
         </div>
         <div>
           <CardProject
@@ -394,7 +395,7 @@ const Projects = () => {
               stateListProjects.listPj[stateListProjects.selectCurrent].title
             }
             img={stateListProjects.listPj[stateListProjects.selectCurrent].img}
-            info={
+            technologies={
               stateListProjects.listPj[stateListProjects.selectCurrent]
                 .technologies
             }

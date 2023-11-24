@@ -4,6 +4,31 @@
   display: flex;
   flex-flow: column nowrap;
   overflow: hidden;
+  > .divContainerMoon {
+    filter: blur(0.06rem);
+    top: 2rem;
+    left: 40vw;
+    width: 14.5rem;
+    height: 4.5rem;
+    position: absolute;
+    box-shadow: 0 0 4rem 2rem rgba(224, 224, 224, 0.488),
+      0 0 4rem 0.2rem rgba(243, 241, 241, 0.504),
+      inset 0 0 0.8rem 0.2rem rgba(243, 241, 241, 0.486);
+    border-radius: 50%;
+    animation-name: moonLight;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 49;
+  }
+
+  @keyframes moonLight {
+    50% {
+      box-shadow: 0 0 3.5rem 2rem rgba(224, 224, 224, 0.516),
+        0 0 4.5rem 0.2rem rgba(243, 241, 241, 0.478),
+        inset 0 0 1rem 0.2rem rgba(243, 241, 241, 0.471);
+    }
+  }
   > div {
     > div {
       &::-webkit-scrollbar-thumb {
@@ -14,7 +39,7 @@
       }
 
       &::-webkit-scrollbar {
-        width: .3vw;
+        width: 0.3vw;
         height: 0rem;
 
         transition: 1s;
