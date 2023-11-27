@@ -353,7 +353,7 @@ const Projects = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Ejercicios</h1>
+      <h1>Proyectos</h1>
       <div>
         <div>
           <button

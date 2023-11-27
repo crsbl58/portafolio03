@@ -178,6 +178,7 @@
           flex-flow: column nowrap;
           color: rgb(210, 217, 219);
           border-radius: 0.2rem;
+          box-shadow: .3rem .3rem .3rem .05rem rgba(9, 14, 29, 0.541);
           &::before {
             content: "Info";
             color: white;

@@ -24,13 +24,13 @@
   > div:nth-child(2) {
     padding: 1rem 0 1rem 0;
     width: 100%;
-    backdrop-filter: blur(0.3rem);
+    backdrop-filter: blur(0.05rem);
 
     background: linear-gradient(
       90deg,
       rgba(14, 29, 68, 0.384),
       rgba(9, 13, 17, 0.411) 50%,
-      rgba(12, 24, 39, 0.404)
+      rgba(12, 24, 39, 0.267)
     );
     > div {
       display: flex;
@@ -58,8 +58,8 @@
   }
   > div:nth-child(3) {
     margin-top: 2rem;
-    background-color: rgba(17, 16, 17, 0.527);
-    backdrop-filter: blur(0.3rem);
+    background-color: rgba(17, 16, 17, 0.212);
+    backdrop-filter: blur(0.05rem);
     /*   view-transition-name: skillChild2; */
     padding: 1rem 0 1rem 0;
     /*       border-top: 0.1rem rgb(25, 24, 31) solid;
@@ -67,7 +67,7 @@
     > h3 {
       color: white;
       font-size: 0.9rem;
-      background-color: rgb(21, 22, 22);
+      background-color: rgba(21, 22, 22, 0.575);
       border-radius: 0.2rem;
 
       padding: 0.2rem 1rem;

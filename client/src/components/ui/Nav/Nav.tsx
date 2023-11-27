@@ -22,7 +22,7 @@ const Nav = () => {
       { name: "Inicio", route: "/home", icon: homeIcon },
       { name: "Sobre mi", route: "/about", icon: aboutIcon },
       { name: "Habilidades", route: "/skills", icon: skillIcon },
-      { name: "Ejercicios", route: "/projects", icon: projectsIcon },
+      { name: "Proyectos", route: "/projects", icon: projectsIcon },
       { name: "Contacto", route: "/contact", icon: contactIcon },
     ],
   });
