@@ -281,15 +281,17 @@ const Projects = () => {
                 <Image src={gitHub} alt="gitHub" />
                 GitHub
               </li>
-              <li>
-                {technologies.map((list: any) => {
-                  return list;
-                })}
-              </li>
             </ul>
           </nav>
         </div>
-        <p>{stateListProjects.listPj[stateListProjects.selectCurrent].info}</p>
+        <p>
+          {stateListProjects.listPj[stateListProjects.selectCurrent].info}
+          <span>
+            {technologies.map((list: any) => {
+              return list;
+            })}
+          </span>
+        </p>
         <Image src={img} alt={title} />
       </div>
     );
@@ -354,7 +356,7 @@ const Projects = () => {
       <h1>Ejercicios</h1>
       <div>
         <div>
-           <button
+          <button
             onClick={() => {
               directionArrow("next");
             }}
@@ -418,8 +420,6 @@ const Projects = () => {
               stateListProjects.listPj[stateListProjects.selectCurrent].link
             }
           />
-
-         
         </div>
       </div>
     </div>

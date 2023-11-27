@@ -17,7 +17,7 @@ const Template = ({ children }: { children: any }) => {
       <Nav />
 
       <div className={styles.container}>
-        {/*     <Star /> */}
+           {/*  <Star />  */}
         <KeyFramesAnimation> {children} </KeyFramesAnimation>
       </div>
     </Screen>
