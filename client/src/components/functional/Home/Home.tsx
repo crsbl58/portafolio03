@@ -31,7 +31,8 @@ const Home = () => {
     ],
   });
 
-  const cmdP = 'C:\\Cristóbal\\Chile\\Sexta región\\Aiep: tec. Nivel Superior Programación Computacional';
+  const cmdP =
+    "C:\\Cristóbal\\Chile\\Sexta región\\Aiep: tec. Nivel Superior Programación Computacional";
 
   return (
     <div className={styles.container}>
@@ -65,7 +66,8 @@ const Home = () => {
           />
         </div>
         <h2>
-          En constante aprendizaje, al igual en busca de dar mi mejor trabajo.
+          me gusta tomar desafíos nuevos y seguir aprendiendo mucho más. Siempre
+          se generan nuevas metas; es lo entretenido de la programación.
         </h2>
       </div>
       <div>

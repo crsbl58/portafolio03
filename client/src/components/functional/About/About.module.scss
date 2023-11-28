@@ -2,6 +2,7 @@
   width: 100%;
   height: 100%;
   display: flex;
+  flex-flow: row wrap;
   overflow: scroll;
   justify-content: center;
   align-items: flex-start;
@@ -13,7 +14,54 @@
     justify-content: center;
     align-items: center;
   }
+
   > div:nth-child(1) {
+
+    > h1 {
+      background-color: #19191a;
+      border-radius: 0.2rem;
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 0.2rem 2rem;
+      margin-bottom: 3rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    > h3 {
+  
+      backdrop-filter: blur(0.3rem);
+      border: solid 0.05rem white;
+      color: white;
+
+      font-size: 1rem;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+      justify-content: center;
+      padding: 2rem;
+      position: relative;
+      text-align: left;
+      width: 80vw;
+      &::before {
+        border: solid 0.05rem white;
+        content: "";
+        height: 100%;
+        left: -2.5%;
+        position: absolute;
+        top: 2%;
+        -webkit-transform: skew(-5deg, 0);
+        transform: skew(-5deg, 0);
+        width: 105%;
+        z-index: 10;
+      }
+      > img {
+        width: 5rem;
+        float: left;
+        height: auto;
+      }
+    }
+  }
+
+  > div:nth-child(2) {
     > h1 {
       background-color: #19191a;
       border-radius: 0.2rem;
@@ -57,7 +105,7 @@
       }
     }
   }
-  > div:nth-child(2) {
+  > div:nth-child(3) {
     > h1 {
       background-color: #19191a;
       border-radius: 0.2rem;
@@ -107,6 +155,11 @@
       }
     }
     > div:nth-child(2) {
+      > h3 {
+        width: 80vw;
+      }
+    }
+    > div:nth-child(3) {
       > div {
         grid-template-columns: auto;
       }
