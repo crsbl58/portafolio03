@@ -37,9 +37,9 @@ const Nav = () => {
         changeState(false);
         router.push(list.route);
         setStateListNav({ ...stateListNav, CurrentNav: index });
-      }, 600);
+      }, 450);
      
-      if (windowWidth < 800) {
+      if (windowWidth < 700) {
         setStateMenu(false);
       }
     }

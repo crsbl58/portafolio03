@@ -7,7 +7,7 @@ const Clouds = () => {
 
   useEffect(() => {
     let array: any = [];
-    for (let i = 0; i < 60; i++) {
+    for (let i = 0; i < 40; i++) {
       let coordinatedLeftClouds = Math.floor(Math.random() * 99 + 1);
       let coordinatedToptClouds = Math.floor(Math.random() * 30+ 1);
       let coordinatedSizeClouds = Math.floor(Math.random() * 10 + 1);
