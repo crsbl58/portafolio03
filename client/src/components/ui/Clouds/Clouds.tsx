@@ -9,7 +9,7 @@ const Clouds = () => {
     let array: any = [];
     for (let i = 0; i < 60; i++) {
       let coordinatedLeftClouds = Math.floor(Math.random() * 99 + 1);
-      let coordinatedToptClouds = Math.floor(Math.random() * 25 + 1);
+      let coordinatedToptClouds = Math.floor(Math.random() * 30+ 1);
       let coordinatedSizeClouds = Math.floor(Math.random() * 10 + 1);
       let randomClouds = Math.floor(Math.random() * 7 + 1);
       let randomAnimationDuration = Math.floor(Math.random() * 16 + 1);

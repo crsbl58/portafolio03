@@ -55,12 +55,12 @@ const About = () => {
         <h1>Presentación</h1>
         <h3>
           Desarrollador web. Comencé trabajando en soporte, en ese
-          entonces solo sabía Visual Basic y bases de datos. Así que, en mis
-          tiempos muertos en el trabajo, aprendí HTML5, CSS3, JavaScript y PHP.
-          Posteriormente, aprendí React, Redux y Node, solidificando mis
+          entonces solo sabía Visual Basic. Así que, en mis
+          tiempo libre, aprendí HTML5, CSS3, JavaScript y PHP.
+          Posteriormente, aprendí React, Redux y Node, solidifique mis
           conocimientos en CSS. He tenido varios empleos como desarrollador,
           pero el último fue en el que adquirí más conocimiento y experiencia,
-          aprendiendo Express, Next, creando queries más complejas y utilizando
+          aprendiendo Express, Next, creando querys más complejas y utilizando
           herramientas como Zustand y Socket.IO. Desarrollé habilidades
           prácticas, como la creación de PDFs, Excel, gestión de imágenes, entre
           otras.
