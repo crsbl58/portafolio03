@@ -9,6 +9,7 @@
     z-index: 21;
     &::after {
       background-color: #222b4675;
+      backdrop-filter: blur(0.1rem);
       content: "";
       height: 2.8rem;
       left: -5rem;
@@ -52,7 +53,7 @@
       list-style-type: none;
       z-index: 21;
       > li {
-        backdrop-filter: blur(0.5rem);
+        backdrop-filter: blur(0.1rem);
         background-color: #1733508c;
         z-index: 22;
         border-bottom: 0.1rem solid rgba(47, 57, 68, 0.966);

@@ -24,7 +24,7 @@
   > div:nth-child(2) {
     padding: 1rem 0 1rem 0;
     width: 100%;
-    backdrop-filter: blur(0.05rem);
+    backdrop-filter: blur(0.1rem);
 
     background: linear-gradient(
       90deg,
@@ -59,7 +59,7 @@
   > div:nth-child(3) {
     margin-top: 2rem;
     background-color: rgba(17, 16, 17, 0.212);
-    backdrop-filter: blur(0.05rem);
+    backdrop-filter: blur(0.1rem);
     /*   view-transition-name: skillChild2; */
     padding: 1rem 0 1rem 0;
     /*       border-top: 0.1rem rgb(25, 24, 31) solid;

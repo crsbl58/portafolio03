@@ -9,15 +9,16 @@ import Star from "../start/start";
 import Image from "next/image";
 import { url } from "inspector";
 import Moon from "../moon/moon";
+import Clouds from "@/components/ui/Clouds/Clouds";
 
 const Template = ({ children }: { children: any }) => {
   return (
     <Screen>
       <Moon />
       <Nav />
-
-      <div className={styles.container}>
-           {/*  <Star />  */}
+      <Clouds />
+      <div className={styles.container}> 
+        {/*  <Star />  */}
         <KeyFramesAnimation> {children} </KeyFramesAnimation>
       </div>
     </Screen>

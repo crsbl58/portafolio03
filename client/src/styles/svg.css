@@ -433,3 +433,33 @@
 .moon25 {
   fill: #dddddd;
 }
+
+
+
+/*nubes*/
+.clouds0class0 {
+  fill: #ebe8e8;
+}
+.clouds1class0 {
+  fill: #ebe8e8;
+}
+.clouds2class0 {
+  fill: #ffffff;
+}
+.clouds3class0 {
+  fill: #ffffff;
+}
+.clouds4class0 {
+  fill: #ffffff;
+}
+.clouds5class0 {
+  fill: #ffffff;
+}
+.clouds5class0 {
+  fill: #ffffff;
+}
+
+.divContainerClouds {
+  width: 4rem;
+  height: 4rem;
+}

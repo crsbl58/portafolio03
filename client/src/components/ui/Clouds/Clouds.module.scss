@@ -1,0 +1,35 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  z-index: 0;
+  > div {
+    filter: blur(0.4rem);
+    position: absolute;
+    animation-name: identifier;
+    animation-duration: 20s;
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes identifier {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.05;
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(50vw);
+  }
+}
