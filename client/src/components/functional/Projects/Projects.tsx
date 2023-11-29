@@ -21,7 +21,7 @@ import Imdb from "../../../../public/img/Imdb.jpg";
 import apiCountries from "../../../../public/img/apiCountries.jpg";
 import advertisingSign from "../../../../public/img/advertisingSign.jpg";
 import apiImg from "../../../../public/img/apiImg.jpg";
-import viewTransition from "@/utils/viewTransition";
+import freelance00 from "../../../../public/img/freelance00.jpg";
 import { url } from "inspector";
 
 const Projects = () => {
@@ -29,6 +29,21 @@ const Projects = () => {
   const [stateListProjects, setStateListProjects] = useState({
     selectCurrent: 0,
     listPj: [
+      {
+        title: "freelance Arriendo cilindros",
+        link: ["", ""],
+        technologies: [
+          "React.js, ",
+          "zustand ",
+          "typeScript, ",
+          "sass, ",
+          "Express.js, ",
+          "Mysql, ",
+          "git",
+        ],
+        img: freelance00,
+        info: "App préstamos de cilindros con distintos contenidos. seguimiento a cilindros desde vacío, disponible, solicitado, en uso y retirado, con estadísticas de, clientes,repartidores y cilindros. Utilicé patrones de diseño como Atomic  Design y MVC. desplegue en railway.app",
+      },
       {
         title: "Portafolio 1",
         link: [
