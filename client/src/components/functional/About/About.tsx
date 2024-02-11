@@ -11,6 +11,7 @@ const About = () => {
 
   const [stateProfile02] = useState([
     {
+      
       title: "Actitud positiva",
       svg00: starIcon,
     },
